@@ -10,3 +10,112 @@ body {
 }
 
 /* Add styles here! */
+
+:root 
+{
+  --spacing-smallest: 8px;
+  --spacing-smaller: 16px;
+  --spacing-small: 24px;
+  --spacing-medium: 32px;
+  --spacing-large: 48px;
+  --spacing-larger: 64px;
+  --spacing-largest: 96px;
+  --spacing-huge: 128px;
+
+  --font-size-small: 1rem;
+  --font-size-medium: 1.25rem;
+  --font-size-large: 1.5rem;
+  --font-size-huge: 2rem;
+
+  --colour-primary: hsl(160deg, 100%, 30%);
+
+  --colour-secondary-light:hsl(45deg, 100%, 50%);
+  --colour-secondary-dark :hsl(45deg, 100%, 40%);
+
+  --colour-black: hsl(0deg, 0%, 0%);
+  --colour-very-dark-grey: hsl(0deg, 0%, 10%);
+  --colour-dark-grey: hsl(0deg, 0%, 30%);
+  --colour-medium-grey: hsl(0deg, 0%, 40%);
+  --colour-light-grey: hsl(0deg, 0%, 60%);
+  --colour-white: hsl(0deg, 0%, 100%);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2
+{
+  color: var(--colour-very-dark-grey);
+}
+
+h1
+{
+  font-size: var(--font-size-huge);
+}
+
+p
+{
+  color: var(--colour-dark-grey);
+}
+
+strong
+{
+  color: var(--colour-primary);
+}
+
+header, main
+{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header
+{
+  padding-top: var(--spacing-larger);
+  padding-bottom: var(--spacing-larger);
+  border-bottom: var(--spacing-smallest) solid var(--colour-medium-grey);
+}
+
+main
+{
+  padding-top: var(--spacing-larger);
+  background-color: var(--colour-light-grey);
+  min-height: 100%;  
+}
+
+.max-width-wrapper
+{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.card
+{  
+  background-color: var(--colour-white);
+  border-top: 0 solid var(--colour-white);
+  border-bottom: var(--spacing-smallest) solid var(--colour-medium-grey);
+  padding: var(--spacing-smaller);
+}
+
+.indented-heading
+{
+  background-color: var(--colour-secondary-light);
+  min-width: min-content;
+  max-width: max-content;
+  margin: calc(-1 * var(--spacing-smallest)) 0 0 calc(-1 * var(--spacing-medium));
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-bottom: var(--spacing-smallest) solid var(--colour-secondary-dark);
+}
+
+.intro-chunk
+{
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: var(--spacing-smaller);
+  max-width: 350px;
+}
